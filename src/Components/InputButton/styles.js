@@ -1,6 +1,6 @@
 const styles = {
   wrapper: {
-    display:"flex",
+    display: "flex",
     margin: "10px 5px",
     width: "23.6%",
     minWidth: "23.6%",
@@ -30,8 +30,14 @@ const styles = {
     width: "100%",
     minWidth: "25%",
     wordBreak: "break-all",
-  }, 
-    "& input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button": {
+    "& input::-webkit-outer-spin-button, input::-webkit-inner-spin-button": {
+      display: "none",
+      appearance: "none",
+      margin: 0
+    }
+  },
+  "input::-webkit-outer-spin-button, input::-webkit-inner-spin-button": {
+    display: "none",
     appearance: "none",
     margin: 0
   }
